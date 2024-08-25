@@ -22,12 +22,23 @@
                 <textarea asp-for="Description" class="form-control"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
+            <!--<div class="form-group">
+                <label asp-for="ResolverName" class="control-label"></label>
+                <input asp-for="ResolverName" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>-->
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
                 <select asp-for="Status" class="form-control">
                     <option value="Open">Open</option>
                     <option value="In Progress">In Progress</option>
+                    <option value="Resolved">Resolved</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResolvedDate" class="control-label"></label>
+                <input type="datetime-local" asp-for="ResolvedDate" class="form-control" />
+                <span asp-validation-for="ResolvedDate" class="text-danger"></span>
             </div>
             <div class="button-container">
                 <form asp-action="Edit" method="post">

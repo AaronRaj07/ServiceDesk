@@ -8,5 +8,7 @@ namespace ServiceDesk.Models
         public string? Status { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ResolvedDate { get; set; }
+        //public string? RequestorName { get; set; }
+        //public string ResolverName { get; set; }
     }
 }
