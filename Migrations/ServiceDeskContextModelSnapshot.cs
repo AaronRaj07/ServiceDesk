@@ -37,18 +37,21 @@ namespace ServiceDesk.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RequestorName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ResolvedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ResolverName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
